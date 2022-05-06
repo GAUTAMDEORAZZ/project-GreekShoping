@@ -1,0 +1,136 @@
+/* these file is used to write styles for signup and login */
+header>img{
+    width: 100%;
+    height: 100px;
+    margin: 0px;
+    padding: 0px;
+ }
+
+ #navbar1{
+     display: flex;
+    
+     justify-content: flex-end;
+     margin:0px;
+     padding:0px;
+     
+     
+ }
+ #navbar1>div{
+   padding: 20px;
+ }
+
+ #box2{
+     display: flex;
+     width: 30%;
+ }
+ #box1{
+     display: flex;
+     width: 70%;
+ }
+ #box1>img{
+     width: 25%;
+     margin-top: 15px;
+ }
+ #box1>#searchBar{
+     width: 70%;
+ }
+ #box1>#searchBar>select{
+     width: 20%;
+     border: 0px;
+     border-right: 1px solid rgb(15, 148, 128);
+     font-size: 15px;
+     text-align: center;
+ }
+ #box1>#searchBar>input{
+     width: 80%;
+     border: 0px;
+     text-align: center;
+     font-size: 20px;
+     color: rgb(17, 142, 146);
+ }
+ #box1>#searchBar>input:hover{
+     border: 0px;
+     cursor: pointer;
+     background-color: aquamarine;
+ }
+
+ #box1>#searchBar>select:hoverP{
+
+    border: 0em;
+
+ }
+
+ #navbar2{
+     display: flex;
+     justify-content: space-between;
+     margin-top: -20px;
+
+ }
+
+ .leftlogos{
+     display: flex;
+     margin-top: 20px;
+     font-size: 20px;
+
+ }
+ .leftlogos>img{
+     width: 20%;
+     display: inline;
+     margin-right: 10px;
+     height: 30%; 
+     margin-top:20px ;       
+     }
+
+ .leftlogos>p>a{
+     text-decoration: none;
+     font-size: 20px;
+     /* color: rgb(25, 227, 213); */
+    color: rgb(210, 92, 13);;
+
+ }
+ .leftlogos>p>a:hover{
+     color: blue;
+ }
+
+ #searchBar{
+     display: flex;
+     border: 1px solid rgb(15, 125, 169);
+     height: 40%;
+     margin-top: 30px;
+ }
+
+
+ /* css for navbar3 */
+
+
+ .navbar3{
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+    align-items: center;
+    font-size: 14px;
+  
+    
+}
+.navbar3>div>select{
+  
+    border: 0px;
+    font-size: 14px;
+    color: rgb(210, 92, 13);;
+    font-weight: bold;
+
+   
+  
+}
+.navbar3>div>a{
+    text-decoration: none;
+    color: rgb(210, 92, 13);;
+    font-weight: bold;
+
+
+}
+
+.navbar3>div>a:hover{
+    color: blue;
+}
+
