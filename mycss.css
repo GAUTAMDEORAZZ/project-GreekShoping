@@ -1,0 +1,424 @@
+
+#container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows:auto ;
+    justify-content: space-around;
+     /* border: 1px solid greenyellow; */
+     width: 80%;
+     margin: auto;
+     gap: 10px;
+}
+#container>div{
+margin-top: 10px;
+ justify-content: center;
+ align-items: center;
+ box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+}#container>div:nth-child(1){
+    background-color: rgb(255, 255, 255);
+    /* padding-bottom: 20px; */
+}#container>div:nth-child(2){
+    background-color:rgb(255, 255, 255); 
+    padding-bottom: 20px;
+}
+#coat{
+    height: 600px;
+    width: 100%;
+}
+
+#descbox{
+    height: 80px;
+    width: 80%;
+    background-color:rgb(255, 255, 255);
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#descbox div:nth-child(1){
+  width: 15%;
+   text-align: center;
+   font-size: 25px;
+    font-weight: 700;
+    background-color: rgb(7, 78, 163);
+    cursor:pointer;
+    font-family: "Open Sans", sans-serif;
+    color: white;
+    
+
+   
+}
+#descbox div:nth-child(2){
+    width: 15%;
+    text-align: center;
+    font-size: 25px;
+     cursor:pointer;
+     font-family: "Open Sans", sans-serif;
+     color: rgb(32, 31, 31);
+     
+     
+  }
+  #descbox div:nth-child(3){
+    width: 15%;
+    font-size: 25px;
+     cursor:pointer;
+     font-family: "Open Sans", sans-serif;
+     color: rgb(32, 31, 31);
+     
+  }
+
+  #para{
+      background-color: white;
+      height: 380px;
+      width: 80%;
+      margin: auto;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  #p{
+      font-size: 18px;
+  }
+  #picsettle{
+      /* background-color: brown; */
+      height: 1000px;
+      width: 80%;
+      margin: auto;
+  }
+  #imgproduct{
+     height:1000px;
+     width: 100%;
+     margin: auto; 
+     justify-items: center;
+  }
+  #rectbox{
+      height: 120px;
+      width: 80%;
+      /* background-color: gold; */
+      margin:auto;
+  }
+  #rectboxp{
+      text-align: center;
+      font-size: 20px;
+      
+      
+  }
+  #recommended{
+      height: 40px;
+      width: 20%;
+      /* border: 1px solid red; */
+      margin-left: 133px;
+  }
+  #recommendedproducts{
+         display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(1, 20px);
+        height:auto;
+        gap: 20px;
+        width: 80%;
+        margin: auto;
+        /* border: 1px solid red; */
+        display: flex;
+  }
+  #recommendedproducts > div {
+    /* border: 1px solid black; */
+    height: auto;
+    width:20%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  }
+  #recommendedproducts > div img{
+      width: 100%;
+      height: 180px;
+  }
+  #recommendedproducts > div > p{
+  font-size: 15px;
+  color: rgb(92, 92, 92);
+}#recommendedproducts > div > p + p{
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+  }
+ 
+
+
+
+  #photoreview{
+      height: 350px;
+      width: 80%;
+       background-color: blue; 
+      margin: auto;
+
+  }#photoreview img{
+      width: 100%;
+      height: auto;
+  }
+ 
+ #d{
+    height: 40px;
+    width: 100%;
+     /* border:1px solid blue; */
+
+}
+#d > h4{
+    margin-top: 10px;
+} 
+#bc{
+    /* border: 1px solid red; */
+    height: auto;
+    width: 100%;
+    
+  
+}
+  #sc{
+    
+    /* border: 1px solid rgb(0, 89, 255); */
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around ;
+  }
+  #sc img{
+      width: 15%;
+    height: 25px;
+    margin-top: 5px;
+    cursor: pointer;
+
+  
+  }#sc p{
+      margin-top: 10px;
+      color: grey;
+  }
+  #font{
+   
+      background-color: rgb(224, 106, 189);
+     
+  }#price_box1{
+     margin-top: 20px;
+   
+     
+  }
+  #price_box2{
+    margin-top: 20px;
+ }#pri{
+     margin-right:20px
+ }#rs{
+    margin-right:50px
+ }#coupon1{
+    margin-right:20px
+ }#font{
+    margin-right:20px
+ }#coupon2{
+    margin-right:20px
+    
+ }#thirdcont{
+     /* border: 1px solid rgb(56, 87, 50); */
+     height: auto;
+     width: 100%;
+     background-color: rgb(228, 228, 228);
+     margin-top: -5px;
+     padding-bottom: 40px;
+ }
+ #price_box3{
+     display: flex;
+     color: gray;
+ }
+ #price_box3btn{
+     /* border: 1px solid rgb(75, 236, 54); */
+     background-color: white;
+     color: rgb(63, 129, 228);
+    margin-left: 40px;
+    height: 35px;
+    margin-top: 15px;
+    width: 15%;
+    border-width: 2px;
+    font-size: 15px;   
+}
+#qty{
+    display: flex;
+    /* border: 1px solid rgb(255, 0, 200); */
+    height: 99%;
+    height:auto;
+    text-align: center;
+    padding-top: -10px;
+    
+}#Dec{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    margin-left: 75px;
+    cursor: pointer;
+    
+}#Inc{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    margin-left: 0px;
+    cursor: pointer;
+}#num{
+    border: 1px solid grey;
+    width: 15%;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    height: 20px;
+}h1{
+    margin-top: -2px;
+    font-size: 20px;
+}#qty p{
+    margin-top: 23px;
+    color:grey;
+}
+#shipping{
+    display: flex;
+    color: gray;
+    
+}#shipping :nth-child(2){
+    margin-left: 50px;
+}
+
+
+
+
+#button2{
+/* border: 1px solid pink; */
+display: flex;
+
+
+}
+#button2 :nth-child(1){
+
+font-size: 30px;
+border: 1px solid sandybrown;
+background-color: rgb(252, 246, 236);
+color: orange;
+text-align: center;
+font-weight: bold;
+cursor: pointer;
+
+}
+
+#button2 :nth-child(2){
+margin-left: 20px;
+font-size: 30px;
+border: 1px solid sandybrown;
+background-color: rgb(255, 166, 11);
+color: rgb(255, 255, 255);
+text-align: center;
+font-weight: bold;
+cursor: pointer;
+    
+}
+#button2 p{
+        margin-left: 20px;
+        font-weight: bold;
+}
+#pay{
+    display: flex;
+    /* border: 1px solid springgreen; */
+    margin-top: 20px;
+
+}#pay p{
+    color: rgb(136, 130, 130);
+}
+#pay img{
+    margin-left: 20px;
+    width: 15%;
+    height: 25px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+#image1{
+    display: flex;
+   gap: 20px;
+   width: 100%;
+   height: 40px;
+}
+#image2{
+    display: flex;
+   gap: 20px;
+   width: 100%;
+   height: 40px; 
+   margin-top: 20px;
+   color: rgb(97, 93, 93);
+}
+#image2 p{
+  margin-top: 5px;
+  margin-right: 20px;
+
+}#image2 img{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+
+}
+
+
+@media all and (min-width: 100px) and (max-width:450px){
+   
+
+        #container{
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            grid-template-rows:auto;
+             width:auto;
+             margin: auto;
+        }
+        #recommendedproducts{
+            display: grid;
+           grid-template-columns: repeat(1, 1fr);
+           grid-template-rows:auto;
+           height:auto;
+           width: auto;
+     }#recommendedproducts > div {
+        height: auto;
+        width:auto;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+      }
+    }
+   
+    #reviewbox{
+        height: 200px;
+        width: 80%;
+        margin: auto;
+        margin-top: -40px;
+    }
+    #button3{
+        font-size: 20px;
+        border: 1px solid sandybrown;
+        background-color: rgb(255, 166, 11);
+        color: rgb(255, 255, 255);
+        text-align: center;
+        font-weight: bold;
+        cursor: pointer;
+        
+    }
+
+  /* Three column layout */
+  .side {
+    float: left;
+    width: 15%;
+    margin-top:10px;
+  }
+  
+  .middle {
+    width: 60%;
+    margin-top:13px;
+    float: left;
+    
+  }
+  
+  /* The bar container */
+  .bar-container {
+    width: auto;
+    background-color: #f1f1f1;
+    text-align: center;
+    color: white;
+
+  }
+  
+  /* Individual bars */
+  .bar-5 {width: 66%; height: 16px; background-color: #e48a16;}
+  .bar-4 {width: 35%; height: 16px; background-color: #e48a16;}
+  .bar-3 {width: 13%; height: 16px; background-color: #e48a16;}
+  .bar-2 {width: 7%; height: 16px; background-color: #e48a16;}
+  .bar-1 {width: 25%; height: 16px; background-color: #e48a16;}
+  
+ #fontsz{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
