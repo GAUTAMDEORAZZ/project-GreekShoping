@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronics product</title>
+
+
+    <link rel="stylesheet" href="category.css">
+
+</head>
+<body>
+    <h1>Electronics Product</h1>
+    <div id="topimage"><img src="https://img.gkbcdn.com/s3/c/2104/20210416172510647q10.jpg" alt=""></div>
+    <select name="price" id="price">
+        <option value="none">Sort by price</option>
+        <option value="high">High to Low</option>
+        <option value="low">Low to High</option>
+    </select>
+    <div id="container"></div>
+</body>
+</html>
+
+<script>
+    
+     var electronicsData = [
+            {
+                image_url: "https://img.gkbcdn.com/p/2022-02-24/BMAX-Y13-13-3--Laptop-Intel--Gemini-Lake-N4120-8GB-256GB-EU-Plug-497175-0._w280_p1_.jpg",
+                name: "BMAX Y13 2-in-1 Convertible Laptop",
+                price: 29875.95,
+                quantity: 1,
+                finalprice: 29875.95,
+                strikedoffprice: 37895.50
+   
+        },
+            {
+                image_url: "https://img.gkbcdn.com/p/2022-02-23/CENAVA-PA156-12-15-6--Laptop-Intel-Celeron-J4125-12GB-128GB-497131-0._w280_.jpg",
+                name: "CENAVA PA156-12 Laptop 15.6 Inch",
+                price: 31448.41,
+                quantity: 1,
+                finalprice: 31448,
+            strikedoffprice: 34514.71
+   
+        },
+            {
+                image_url: "https://img.gkbcdn.com/p/2019-03-22/tronsmart-glary-virtual-7-1-gaming-headset-1571985014193._w280_p1_.jpg",
+                name: "Tronsmart Glary Gaming Headset ",
+                price: 2357.90,
+                quantity: 1,
+                finalprice: 2357.90,
+           strikedoffprice: 2908.26
+   
+        },
+            {
+                image_url: "https://img.gkbcdn.com/p/2019-11-21/TicPods-2-AI-TWS-Wireless-Smart-Headphone-Blue-888795-._w280_.jpg",
+                name: "TicPods 2 AI Qualcomm QCC30 ",
+                price: 5502.82,
+                quantity: 1,
+                finalprice: 5502.82,
+            strikedoffprice: 9433.97
+   
+        },
+            {
+                image_url: "https://img.gkbcdn.com/p/2019-05-23/minix-neo-c-ssd-usb-c-hub-with-240g-ssd-space-gray-1571991105074._w280_.jpg",
+                name: "MINIX NEO S2 SSD USB-C Multiport ",
+                price: 6760.79,
+                quantity: 1,
+                finalprice: 6760.79,
+            strikedoffprice: 8647.74
+   
+        },
+            {
+                image_url: "https://img.gkbcdn.com/p/2019-02-20/stmagic-spt30-512g-mini-portable-m-2-ssd-blue-1571989892821._w280_.jpg",
+                name: "STmagic SPT30 512G Mini Portable",
+                price: 5738.69,
+                quantity: 1,
+                finalprice: 5738.69,
+            strikedoffprice: 7075.28
+   
+        },
+            {
+                image_url: "https://img.gkbcdn.com/p/2018-11-22/netac-n600s-1tb-ssd-2-5-inch-solid-state-drive-blue-1571991121689._w280_.jpg",
+                name: "Netac N600S 1TB SSD 2.5 Inch Solid ",
+                price: 11006.43,
+                quantity: 1,
+                finalprice: 11006.43,
+            strikedoffprice: 12736.14
+   
+        },
+            {
+                image_url: "https://img.gkbcdn.com/p/2021-10-27/XIAOMI-Wanbo-T2MAX-1080P-Mini-LED-Projector-Global-Edition-475176-0._w280_p1_.jpg",
+                name: "Xiaomi Wanbo T2 MAX 1080P ",
+                price: 11792.66,
+                quantity: 1,
+                finalprice: 11792.66,
+            strikedoffprice: 17296.27
+   
+        },
+            {
+                image_url: "https://img.gkbcdn.com/p/2022-01-24/HBDF-Bomaker-Cinema-500-Max-Projector-494921-0._w280_.jpg",
+                name: "Bomaker Cinema 500 Max ",
+                price: 19654.96,
+                quantity: 1,
+                finalprice: 19654.96,
+            strikedoffprice: 23586.11
+   
+        },
+            {
+                image_url: "https://img.gkbcdn.com/p/2022-01-24/HBDF-Bomaker-Polaris-4K-Ultra-Short-Throw-Laser-Projector-494920-0._w280_.jpg",
+                name: "Bomaker Polaris 4K Laser Projector",
+                price: 146237.99,
+                quantity: 1,
+                finalprice: 146237.99,
+            strikedoffprice: 209136.39
+   
+        },
+            {
+                image_url: "https://img.gkbcdn.com/p/2022-03-25/BDF-S10-Tablet-PC-10-1-Inch-Quad-Core-Android-EU-Plug-Blue-498348-0._w280_p1_.jpg",
+                name: "BDF S10 Tablet PC 10.1 Inch ",
+                price: 9276.73,
+                quantity: 1,
+                finalprice: 9276.73,
+            strikedoffprice: 10534.70
+   
+        },
+            {
+                image_url: "https://img.gkbcdn.com/p/2022-02-11/af745712085c4309bf1940ff02dc3f2a-496508-0._w280_.jpg",
+                name: "KUU UPAD 11 Inch Tablet PC 4G ",
+                price: 18868.73,
+                quantity: 1,
+                finalprice: 18868.73,
+            strikedoffprice: 21699.16
+   
+        },
+            {
+                image_url: "https://img.gkbcdn.com/p/2022-04-20/ALLDOCUBE-iPlay-40-Pro-UNISOC-Tiger-T618-octa-core-Chip-LTE-Tablet-499807-0._w280_.jpg",
+                name: "ALLDOCUBE iPlay 40 Pro ",
+                price: 20598.65,
+                quantity: 1,
+                finalprice: 20598.65,
+            strikedoffprice: 25468.82
+   
+         },
+            {
+                image_url: "https://img.gkbcdn.com/p/2021-07-06/2-4g-controller-gamepad-1625560641219._w280_p1_.jpg",
+                name: "2.4G Game Wireless Controller ",
+                price: 1021.31,
+                quantity: 1,
+                finalprice: 1021.31,
+            strikedoffprice: 1257.18
+   
+        },
+            {
+                image_url: "https://img.gkbcdn.com/p/2022-01-28/Kospet-Optimus-2-Bluetooth-Smartwatch-1-6-Inch-Helio-P22-Black-495407-0._w280_p1_.jpg",
+                name: "Kospet Optimus 2 Bluetooth ",
+                price: 16824.54,
+                quantity: 1,
+                finalprice: 16824.54,
+            strikedoffprice: 18239.75
+   
+        },
+            {
+                image_url: "https://img.gkbcdn.com/p/2022-02-24/Global-Version-POCO-M4-Pro-6-6-Inch-MediaTek-Dimensity-810-Blue-497179-0._w280_p1_.jpg",
+                name: "POCO M4 Pro 5G NFC Global ",
+                price: 24372.34,
+                quantity: 1,
+                finalprice: 24372.34,
+            strikedoffprice: 28382.12
+   
+        },
+            {
+                image_url: "https://img.gkbcdn.com/p/2021-12-30/oneplus-9rt-cn-version-6-62-inch-12gb-256gb-blue-8c11d5-1640855806895._w280_p1_.jpg",
+                name: "Oneplus 9RT CN Version 5G",
+                price: 61325.15,
+                quantity: 1,
+                finalprice: 61325.15,
+            strikedoffprice: 66986.50
+   
+        },
+            {
+                image_url: "https://img.gkbcdn.com/p/2021-12-10/BUDI-Multi-function-Cable-Stick-Black-480339-0._w280_p1_.jpg",
+                name: "BUDI Multi-function Cable ",
+                price: 1099.94,
+                quantity: 1,
+                finalprice: 1099.94,
+            strikedoffprice: 1178.56
+   
+         },
+            {
+                image_url: "https://img.gkbcdn.com/p/2021-11-26/Gaming-Mouse-Wired-257A--10-Programmable-Buttons-RGB-Gaming-Mice-479550-1._w280_p1_.jpg",
+                name: "Pictek RGB Wired Gaming Mouse",
+                price: 942.69,
+                quantity: 1,
+                finalprice: 942.69,
+            strikedoffprice: 2357.90
+   
+        },
+
+        {
+            image_url: "https://img.gkbcdn.com/p/2021-12-22/SCULPFUN-S9-Laser-Engraver-481991-0._w280_p1_.jpg",
+            name: "Sculpfun S9 5.5W Laser Engraver",
+            price: 24372.56,
+            quantity: 1,
+            finalprice: 24372.56,
+            strikedoffprice: 31562.45
+        },
+            {
+                image_url: "https://img.gkbcdn.com/p/2021-11-26/Wireless-car-charger--Qi-car-charger--15-W---10-W---7-5-W--auto-clamp-479546-1._w280_.jpg",
+                name: "Mpow Wireless QI Car Charger ",
+                price: 1886.17,
+                quantity: 1,
+                finalprice: 1886.17,
+            strikedoffprice: 2751.02
+   
+        },
+        
+            {
+                image_url: "https://img.gkbcdn.com/p/2022-04-02/BMAX-MaxPad-I10-Pro-UNISOC-T310-10-1---Screen-Tablet-499038-0._w280_p1_.jpg",
+                name: "BMAX MaxPad I10 Pro UNISOC",
+                price: 11792.66,
+                quantity: 1,
+                finalprice: 11792.66,
+            strikedoffprice: 13443.75
+   
+        },
+            {
+                image_url: "https://img.gkbcdn.com/p/2022-03-04/GPD-MicroPC-Pocket-Laptop-Mini-PC-6-Inch-Screen-Intel-N4120-EU-Plug-497307-0._w280_p1_.jpg",
+                name: "GPD MicroPC Pocket Laptop",
+                price: 38131.37,
+                quantity: 1,
+                finalprice: 38131.37,
+            strikedoffprice: 45286.06
+   
+        },
+            {
+                image_url: "https://img.gkbcdn.com/p/2022-01-18/eMeet-C960-1080P-Webcam-with-Privacy-Cover-Black-494153-0._w280_p1_.jpg",
+                name: "eMeet C960 1080P Webcam ",
+                price: 2593.77,
+                quantity: 1,
+                finalprice: 2593.77,
+            strikedoffprice: 4952.46
+   
+        },
+        ];
+
+        
+            var Products = document.querySelector("#container");
+            display(electronicsData)
+
+          
+
+          
+             document.querySelector("#price").addEventListener("change",priceFn)
+             function priceFn(){
+                 var selected = document.querySelector("#price").value;
+                    console.log(selected);
+                 
+                   
+                    if(selected == "high")
+                    {
+                        var output = electronicsData.sort(function (a,b){
+                           return b.price-a.price
+                        });
+                        display(output)
+                        console.log(output);
+                    }
+
+                    else if (selected == "low") {
+                     var output = electronicsData.sort(function (a, b) {
+                         return a.price - b.price
+                     });
+                     display(output)
+                     console.log(output);
+                 }
+
+                 else
+                 {
+                     display(electronicsData);
+                 }
+ 
+                 
+             }
+            function display(electronicsData) {
+                
+                document.querySelector("#container").innerHTML=""
+
+
+                electronicsData.forEach(function (elem) {
+                    var card = document.createElement("div");
+
+                    var image = document.createElement("img");
+                    image.src = elem.image_url;
+
+                    var h4 = document.createElement("h4");
+                    h4.innerText = elem.name;
+
+                    var p = document.createElement("p");
+                    p.innerText = "₹"+" "+elem.price;
+
+                    var sub = document.createElement("div")
+                    sub.setAttribute("id","sub")
+
+                    var wishlist = document.createElement("button")
+                    wishlist.innerText = "Wishlist"
+                    wishlist.addEventListener("click", function () {
+                        wishlistFn(elem)
+                    })
+                    var button = document.createElement("button");
+                    button.innerText = "Add to Cart";
+                    button.addEventListener("click", function () {
+                        cartFunc(elem);
+                    })
+                    sub.append(wishlist, button)
+                    card.append(image, h4, p, sub)
+                    
+                    document.querySelector("#container").append(card)
+                })
+            }
+
+
+            var CartArr = JSON.parse(localStorage.getItem("Cart_Data")) || [];
+
+            function cartFunc(elem) {
+              
+
+                var bag = CartArr.filter(function (data) {
+                    return data == elem;
+                })
+                if (bag.length == 0) {
+                    console.log(elem)
+                    CartArr.push(elem);
+                    localStorage.setItem("Cart_Data", JSON.stringify(CartArr));
+                    alert("Product Added Successfully")
+
+                }
+
+                else {
+                    alert("Product already in Cart")
+                }
+
+            }
+
+  var wishlistArr = JSON.parse(localStorage.getItem("Wishlist_Data")) || [];
+
+
+    function wishlistFn(elem) {
+
+       
+        var bag1 = wishlistArr.filter(function(data1) {
+            return data1 == elem;
+        })
+
+        if(bag1.length==0)
+        {
+            console.log(bag1.length)
+            wishlistArr.push(elem)
+            console.log(wishlistArr);
+            localStorage.setItem("Wishlist_Data", JSON.stringify(wishlistArr))
+            //window.location.reload();
+            alert("Product added to Wishlist");
+        }
+           
+        else {
+            alert("Product already in Wishlist");
+        }
+
+           
+        }
+
+
+</script>
