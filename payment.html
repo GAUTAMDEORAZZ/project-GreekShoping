@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+  
+    <style>
+
+        body{
+           margin-left: 0%;
+           margin-right: 0%;
+        
+  background-image: url('https://img.gkbcdn.com/s3/bn/2203/signin-6239450f2b40c91b9c8a4526.jpg');
+  background-repeat: no-repeat;
+
+           margin-top: 0px;
+           
+        }
+            
+        #logo
+        {
+            height: 120px;
+            width: 100%;
+            margin: auto;
+            /* border: 1px solid red; */
+            /* margin-top: 20px; */
+            display: flex;
+            justify-content: center;
+            background-color: white;
+            align-items: center;
+        }
+        #logo>img
+        {
+            height: 45%;
+            width: 15%;
+           
+        }
+        #disk
+        {
+            width: 80%;
+            height: 50px;
+            /* border: 1px solid red; */
+            display: flex;
+            margin: auto;
+            align-items: center;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        #disk>h2{
+            color: orangered;
+            font-family: 'Open Sans', sans-serif !important;
+        }
+
+        #disk>h1{
+            font-size: 21px;
+            font-family: 'Open Sans', sans-serif !important;
+        }
+
+        #main
+        {
+            margin: auto;
+            /* border: 1px solid black; */
+            width: 32%;
+            height: 490px;
+            padding-top: 20px;
+            margin-top: 40px;
+            margin-bottom: 10px;
+            background-color: white;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+
+        }
+        #main>#payment
+        {
+            display: flex;
+            flex-direction: column;
+            width: 70%;
+            margin: auto;
+            margin-top: 30px;  
+            gap: 20px; 
+        }
+
+        #main>#payment>.common
+        {
+            height: 50px;
+            font-size: 20px;
+        }
+
+        #main>#payment>#push
+        {
+            color: white;
+            background-color: rgb(54, 54, 224);
+            border: 0px;
+            border-radius: 10px;
+        }
+
+        #main>#payment>#push:hover
+        {
+            color: white;
+            background-color: rgb(243, 77, 77);
+        }
+    </style>
+</head>
+<body>
+    <div id="logo">
+        <img src="data:image/png;base64,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" alt="">
+    </div>
+    <div id="main">
+
+        <div id="disk">
+            <h1>Payable Amount :</h1>
+            <h2></h2>
+        </div>
+        
+        <form action="" id="payment">
+
+            <input type="number" placeholder="Enter Card Number" id="card" class="common">
+            <input type="date" placeholder="Enter Expiry Date" id="date" class="common">
+            <input type="number" placeholder="Enter CVV" id="Cvv" class="common">
+            <input type="number" placeholder="Enter Mobile Number" id="mobile" class="common">
+            <input type="submit" class="common" id="push">
+         
+        </form>
+
+       
+    </div>
+</body>
+</html>
+
+<script>
+var output=JSON.parse(localStorage.getItem("payment"));
+console.log(output);
+
+var display=document.querySelector("div>div>h2");
+display.innerText="₹"+" "+output;
+
+var form=document.querySelector("#payment").addEventListener("submit",PayFn);
+
+function PayFn()
+{
+    event.preventDefault();
+
+  var DataObj= {
+       num:payment.card.value,
+       Date:payment.date.value,
+       cvv:payment.Cvv.value,
+       mob:payment.mobile.value
+   }
+
+   console.log(DataObj.Date)
+
+   if(DataObj.num=="1234567890123456" && DataObj.Date=="2022-05-08" && DataObj.cvv=="789" && DataObj.mob!="")
+   {
+       alert("OTP Sent To Your Mobile Number");
+       localStorage.setItem("PaymentData",JSON.stringify(DataObj));
+       window.location.href="otp.html"
+   }
+
+   if(DataObj.num=="1234567890123456" && DataObj.Date=="2022-05-08" && DataObj.cvv=="789" && DataObj.mob=="")
+   {
+       alert("Please Enter Mobile Number");
+   }
+
+   else if(DataObj.num!="1234567890123456" || DataObj.Date!="2022-05-08" || DataObj.cvv!="789" && DataObj.mob==""){
+       alert("Error: Data Incorrect")
+   }
+   
+}
+
+
+</script>
