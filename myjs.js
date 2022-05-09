@@ -22,3 +22,9 @@ function decfun(){
     localStorage.setItem("counterValue", count);
 }
 
+document.querySelector("#button2>#add").addEventListener("click",cardFun)
+
+
+function cardFun(){
+    alert("Product added successfully")
+}

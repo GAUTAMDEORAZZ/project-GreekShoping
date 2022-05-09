@@ -1,52 +1,46 @@
 
-#container{
-    background: #f2f2f2;
-    width: 100%;
-    position: relative;
- height:max-content;
-  height:auto;
 
-}
 
-/* top most div css */
 #topMost{
-    width: 80%;
-    height: auto;
-    margin-left: 150px;
-    display: grid;
-    grid-template-columns: repeat(12,1fr);
-    grid-template-rows: 150px,170px;
-    grid-template-areas: 
-    "a a a a a a a a a b b b"
-    "a a a a a a a a a c c c"
-    
+  display: flex;
+  width: 80%;
+
+  justify-content: space-between;
+  /* border: 1px solid black; */
+  height: 420px;
+  margin: auto;
+  margin-top: 10px;
 }
-#box1{
-    grid-area: a;
-    margin: 10px;
-    background-color: white;
-}
-#img1{
-    width: 100%;
-    height: 100%;
-}
-#box2{
-    grid-area: b;
-    margin: 10px;
-} 
-#img2{
-    width: 100%;
-    height: 100%;
-}
-#box3{
-    grid-area: c;
-    margin: 10px;
-} #img3{
-    width: 100%;
-    height: 100%;
+#topMost>#box1{
+ width:65%;
+ height:100% ;
+  /* margin-right: 30px; */
+  /* border: 1px solid green; */
 }
 
+#topMost>#left2{
+  width: 33%;
+  display: flex;
+  gap: 35px;
+  flex-direction: column;
+  /* border: 1px solid red; */
+}
+#topMost>#left2>.box2{
+  height: 45%;
+  /* border: 1px solid black; */
+  width: 100%;
+}
 
+#topMost>#box1>img{
+ 
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+}
+#topMost>#left2>.box2 img{
+  height:100%;
+  width: 100%;
+}
 /* second row css */
 #row2{
   padding: 30px;

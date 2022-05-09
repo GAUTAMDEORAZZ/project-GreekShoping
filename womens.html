@@ -654,6 +654,9 @@
         document.querySelector("#container").innerHTML = ""
 
         womensData.forEach(function (elem) {
+            var anc= document.createElement("a");
+                   anc.setAttribute("href","electronics.html")
+
             var card = document.createElement("div");
 
             var image = document.createElement("img");
@@ -683,8 +686,11 @@
 
             sub.append(wishlist,button)
 
-            card.append(image, h4, p, sub)
-            document.querySelector("#container").append(card)
+              anc.append(image)
+             card.append(anc,h4, p, sub)
+                  
+                     
+           document.querySelector("#container").append(card)
         })
     }
 

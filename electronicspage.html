@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Electronics product</title>
 
-
     <link rel="stylesheet" href="category.css">
 
 </head>
@@ -25,6 +24,15 @@
 <script>
     
      var electronicsData = [
+     {
+                image_url: "https://img.gkbcdn.com/s3/d/202112/SCULPFUN-S9-Laser-Engraver-481991-1.jpg",
+                name: "Sculpfun S9 5.5W Laser Engraver",
+                price: 24372.34,
+                quantity: 1,
+                finalprice: 24372.34,
+                strikedoffprice: 37895.50
+   
+        },
             {
                 image_url: "https://img.gkbcdn.com/p/2022-02-24/BMAX-Y13-13-3--Laptop-Intel--Gemini-Lake-N4120-8GB-256GB-EU-Plug-497175-0._w280_p1_.jpg",
                 name: "BMAX Y13 2-in-1 Convertible Laptop",
@@ -287,7 +295,10 @@
 
 
                 electronicsData.forEach(function (elem) {
+                var anc= document.createElement("a");
+                   anc.setAttribute("href","electronics.html")
                     var card = document.createElement("div");
+                        
 
                     var image = document.createElement("img");
                     image.src = elem.image_url;
@@ -308,12 +319,15 @@
                     })
                     var button = document.createElement("button");
                     button.innerText = "Add to Cart";
+
                     button.addEventListener("click", function () {
                         cartFunc(elem);
                     })
                     sub.append(wishlist, button)
-                    card.append(image, h4, p, sub)
-                    
+                    anc.append(image)
+                    card.append(anc,h4, p, sub)
+                  
+                     
                     document.querySelector("#container").append(card)
                 })
             }
@@ -332,6 +346,7 @@
                     CartArr.push(elem);
                     localStorage.setItem("Cart_Data", JSON.stringify(CartArr));
                     alert("Product Added Successfully")
+                    
 
                 }
 

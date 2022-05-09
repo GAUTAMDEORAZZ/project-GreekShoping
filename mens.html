@@ -27,6 +27,14 @@
 
 <script>
     var mensData = [
+    {
+            image_url: "https://img.gkbcdn.com/p/2021-12-25/Waterproof-Army-Rain-Poncho-for-Camping-Hiking-Camouflage-487223-0._w280_p1_.jpg",
+            name: "Waterproof Army Rain ",
+            price: 1414.43,
+            quantity: 1,
+            finalprice: 1414.43,
+            strikedoffprice: 2013.45
+        },
         {
             image_url:
                 "https://content.shop4reebok.com/static/Product-EX4296/reebok_EX4296_1.jpg.plp",
@@ -402,6 +410,8 @@
         document.querySelector("#container").innerHTML = ""
 
         mensData.forEach(function (elem) {
+            var anc= document.createElement("a");
+                   anc.setAttribute("href","product.html")
             var card = document.createElement("div");
 
             var image = document.createElement("img");
@@ -427,9 +437,11 @@
                 cartFunc(elem);
             })
             sub.append(wishlist, button)
-            card.append(image, h4, p, sub)
-            
-            Products.append(card)
+            anc.append(image)
+                    card.append(anc,h4, p, sub)
+                  
+                     
+                    document.querySelector("#container").append(card)
 
         })
     }
